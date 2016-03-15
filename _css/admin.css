@@ -8,13 +8,13 @@ li, ul, ul li{ list-style: none; }
 	NAVMENU
 */
 .navbar-default{background-color:#2B5698;}
-.glyphicon { margin-right: 10px; }
+.glyphicon { margin-right: 10px;}
 
 /*
 	SIDEBAR
 */
 .sidebar-left{ background: #1B2738; }
-.sidebar-left .widget h2{ display: block; clear: both; padding:15px 10px; border-top: 1px solid #27354A; color: white; font-size: 1.2em; text-transform: uppercase; font-weight: 700; }
+.sidebar-left .widget h2{ display: block; clear: both; padding:15px 10px; border-top: 1px solid #27354A; border-bottom: 2px solid #27354A; color: white; font-size: 1.2em; text-transform: uppercase; font-weight: 700; }
 .sidebar-left .widget ul{ padding: 0; margin: 0; }
 .sidebar-left .widget li{ display: block; position: relative; padding: 0; margin: 0; }
 .sidebar-left .widget a{ display: block; padding: 10px; color: white; font-size: 1em; text-transform: uppercase; }
