@@ -11,7 +11,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a class="navbar-brand" href="#"><b>DASHBOARD</b></a>
+			      <a class="navbar-brand" href="<?= BASE; ?>"><b>DASHBOARD</b></a>
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,37 +20,23 @@
 			        <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Posts <span class="caret"></span></a>
 			          	<ul class="dropdown-menu">
-				            <li><a href="#">Action</a></li>
-				            <li><a href="#">Another action</a></li>
-				            <li><a href="#">Something else here</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">Separated link</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">One more separated link</a></li>
-				        </ul>
+				            <li><a href="<?= BASE; ?>/posts/publicar">cadastrar post</a></li>
+				            <li><a href="<?= BASE; ?>/posts/index">ver posts</a></li>
+					</ul>
 			        </li>
 			        <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
 			          	<ul class="dropdown-menu">
-				            <li><a href="#">Action</a></li>
-				            <li><a href="#">Another action</a></li>
-				            <li><a href="#">Something else here</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">Separated link</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">One more separated link</a></li>
+				            <li><a href="<?= BASE; ?>/categorias/publicar">cadastrar categoria</a></li>
+				            <li><a href="<?= BASE; ?>/categorias/index">ver categorias</a></li>
 				        </ul>
 			        </li>
 			        <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Úsuarios <span class="caret"></span></a>
 			          	<ul class="dropdown-menu">
-				            <li><a href="#">Action</a></li>
-				            <li><a href="#">Another action</a></li>
-				            <li><a href="#">Something else here</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">Separated link</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">One more separated link</a></li>
+				            <li><a href="<?= BASE; ?>/usuarios/cadastrar">Criar úsuario</a></li>
+				            <li><a href="<?= BASE; ?>/usuarios/index">ver úsuarios</a></li>
+				            
 				        </ul>
 			        </li>
 			      </ul>
@@ -74,48 +60,30 @@
 				<div class="widget">
 					<h2><i class="glyphicon glyphicon-book"></i> posts</h2>
 					<ul>
-						<li class="item_1"><a href="">item 1</a></li>
-						<li class="item_2"><a href="">item 2</a></li>
-						<li class="item_3"><a href="">item 3</a></li>
-						<li class="item_4"><a href="">item 4</a></li>
-						<li class="item_5"><a href="">item 5</a></li>
+						<li><a href="<?= BASE; ?>/posts/publicar">cadastrar post</a></li>
+				        <li><a href="<?= BASE; ?>/posts/index">ver posts</a></li>
 					</ul>
 				</div>
 
 				<div class="widget">
-					<h2><i class="glyphicon glyphicon-user"></i> usuarios</h2>
+					<h2><i class="glyphicon glyphicon-user"></i> categorias</h2>
 					<ul>
-						<li class="item_1"><a href="">item 1</a></li>
-						<li class="item_2"><a href="">item 2</a></li>
-						<li class="item_3"><a href="">item 3</a></li>
-						<li class="item_4"><a href="">item 4</a></li>
-						<li class="item_5"><a href="">item 5</a></li>
-					</ul>
+						<li><a href="<?= BASE; ?>/categorias/publicar">cadastrar categoria</a></li>
+				        <li><a href="<?= BASE; ?>/categorias/index">ver categorias</a></li>					
+				    </ul>
 				</div>
 					
 
 				<div class="widget">
-					<h2><i class="glyphicon glyphicon-tags"></i> categorias</h2>
+					<h2><i class="glyphicon glyphicon-tags"></i> Úsuarios</h2>
 					<ul>
-						<li class="item_1"><a href="">item 1</a></li>
-						<li class="item_2"><a href="">item 2</a></li>
-						<li class="item_3"><a href="">item 3</a></li>
-						<li class="item_4"><a href="">item 4</a></li>
-						<li class="item_5"><a href="">item 5</a></li>
+						<li><a href="<?= BASE; ?>/usuarios/cadastrar">Criar úsuario</a></li>
+						<li><a href="<?= BASE; ?>/usuarios/index">ver úsuarios</a></li>      
 					</ul>
 				</div>
 
-				<div class="widget">
-					<ul>
-						<li class="item_1"><a href="">item 1</a></li>
-						<li class="item_2"><a href="">item 2</a></li>
-						<li class="item_3"><a href="">item 3</a></li>
-						<li class="item_4"><a href="">item 4</a></li>
-						<li class="item_5"><a href="">item 5</a></li>
-					</ul>
-				</div>
 			</div><!--sidebar fim-->
-
+			
 			<div class="dashboard col-sm-9 column">
 				<header>
 					<h2>Publicar postagem</h2>

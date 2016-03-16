@@ -6,9 +6,9 @@
 	define("THEME", REQUIRE_PATH.'/views');
 
 	//Tipos de erro
-	define("MSG_ALERT", "warning");
+	define("MSG_WARNING", "warning");
 	define("MSG_SUCCESS","success");
-	define("MSG_alert", "alert");
+	define("MSG_ALERT", "alert");
 	define("MSG_ERROR", "error");
 
 	/**

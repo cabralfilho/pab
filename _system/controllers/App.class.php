@@ -3,7 +3,7 @@
 		//usado para retorna a url pelo metodo
 		private $Url;
 		private $Explode;
-		private $System;
+		private $System = [];
 
 		public function __construct()
 		{
@@ -32,20 +32,23 @@
 		}
 
 		public function createSystem(){
-			$retorno = false;
+			$this->System['verificacao'] 		= 'false';
+			$this->System['arquivo'] 		= self::setSystem()['controller'];
 			if(is_dir(THEME.DIRECTORY_SEPARATOR.$this->Explode[0]) && file_exists(THEME.DIRECTORY_SEPARATOR.$this->Explode[0].DIRECTORY_SEPARATOR.$this->Explode[1].'.php')){
-				include THEME.DIRECTORY_SEPARATOR.$this->Explode[0].DIRECTORY_SEPARATOR.$this->Explode[1].'.php';
-				$retorno = true;
+				$this->System['pagina'] 		= THEME.DIRECTORY_SEPARATOR.$this->Explode[0].DIRECTORY_SEPARATOR.$this->Explode[1].'.php';
+				$this->System['verificacao'] 	= 'true';
 			}
-			if(!$retorno)
-			{
-				setErrors("erro ao carregar a pagina <b>{$this->Explode[1]}.php</b>", MSG_ERROR);
-			}
-			return $this->System = $retorno;
+			return $this->System;
 		}
 
 		public function run()
 		{
-			return $this->System;
+			if($this->System['verificacao']=='false')
+			{
+				setErrors("O controller <b>{$this->System['arquivo']}.php</b> não foi encontrado", MSG_WARNING);
+				exit();
+			}
+
+			include $this->System['pagina'];
 		}
 	}
