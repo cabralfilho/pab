@@ -1,1 +1,9 @@
-<h1>HOME PAGE</h1>
+<?php
+	
+	$forms = new Forms;
+
+	$forms->textarea('nome');
+	$forms->textarea('conteudo', 'meu nome é rafel');
+	$forms->text('title',"titulo do campo");
+
+	$forms->save();

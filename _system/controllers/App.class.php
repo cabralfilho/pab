@@ -31,6 +31,7 @@
 			return $d;
 		}
 
+		//monta a url e verifica arquivos nao existentes
 		public function createSystem(){
 			$this->System['verificacao'] 		= 'false';
 			$this->System['arquivo'] 		= self::setSystem()['controller'];
@@ -41,6 +42,7 @@
 			return $this->System;
 		}
 
+		//inicia a aplicacao
 		public function run()
 		{
 			if($this->System['verificacao']=='false')
@@ -48,7 +50,6 @@
 				setErrors("O controller <b>{$this->System['arquivo']}.php</b> não foi encontrado", MSG_WARNING);
 				exit();
 			}
-
 			include $this->System['pagina'];
 		}
 	}

@@ -1,4 +1,11 @@
 <?php
+	session_start();
+	//configuracoes do banco de dados
+	define("DBHOST", "localhost");
+	define("DBUSER", "root");
+	define("DBPASS", "");
+	define("DBNAME", "site");
+
 	//configuraçoes do sistema
 	define("BASE", "http://localhost/painel-admin-bootstrap");
 	define("ADMIN", BASE.DIRECTORY_SEPARATOR.'admin');

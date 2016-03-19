@@ -11,7 +11,7 @@
 	<title>Admin</title>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 	<!--// BOOTSTRAP //-->
-	<link rel="stylesheet" href="<?= BASE; ?>/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="<?= BASE; ?>/_css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="<?= BASE; ?>/_css/admin.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
 	include THEME.'/inc/footer.inc.php';
 ?>
 </body>
-	<script src="<?= BASE; ?>/bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="<?= BASE; ?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="<?= BASE; ?>/_cdn/jquery.js"></script>
+	<script src="<?= BASE; ?>/_cdn/bootstrap.min.js"></script>
 	<script src="<?= BASE; ?>/_cdn/funcoes.js"></script>
 </html>
